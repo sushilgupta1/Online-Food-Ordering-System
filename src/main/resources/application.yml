@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: FOOD-ORDERING-SYSTEM
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+  servlet:
+    multipart:
+      enabled: true
+server:
+  port: 4041
